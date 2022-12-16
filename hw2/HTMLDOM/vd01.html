@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1"> para 1</p>
+        <p id="p2"> para 2</p>
+
+    </div>
+    <script>
+        let myDiv= document.createElement("div");
+        myDiv.innerHTML = "MYDIV";
+
+        let myDiv2 = myDiv.cloneNode();
+
+
+        let d = document.getElementById("div1");
+        let e = document.getElementById("p2");
+        d.appendChild(myDiv);
+        d.insertBefore(myDiv2, e);
+
+
+    </script>
+</body>
+</html>
